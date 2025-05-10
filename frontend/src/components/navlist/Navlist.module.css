@@ -1,0 +1,22 @@
+.navlist {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 480px){
+   .navlist{
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background-color: white;
+    padding: 30px 20px;
+    gap: 20px;
+   }
+}

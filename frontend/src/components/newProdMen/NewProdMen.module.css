@@ -1,0 +1,63 @@
+.new_prod_men {
+  background-color: rgb(235, 92, 154);
+  padding: 30px;
+}
+
+.text {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.text h2 {
+  font-size: 36px;
+  padding: 20px 0;
+}
+
+.text p {
+  font-size: 14px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: white;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 17px;
+}
+
+.price {
+  font-size: 25px;
+}
+
+@media (max-width: 480px) {
+  .img {
+    width: 400px;
+    height: 405px;
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .card {
+      align-items: center;
+      padding: 20px;
+    }
+  }
+}

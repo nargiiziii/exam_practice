@@ -1,25 +1,22 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getProducts } from "../redux/features/productSlice";
+import React from "react";
+import MainHead from "../components/mainHead/MainHead";
+import DiffCateg from "../components/diffCateg/DiffCateg";
+import NewProdMen from "../components/newProdMen/NewProdMen";
+import ProdForWoman from "../components/prodForWoman/ProdForWoman";
 
 const Home = () => {
-  const products = useSelector((state)=> state.products.allProducts);
-  const dispatch = useDispatch();
 
-  console.log(products);
-  
-  useEffect(() => {
-    dispatch(getProducts());
-  }, [dispatch]);
 
   return (
     <>
-      <div>Home</div>
-      {/* <div>
-        {products && products.map((product)=> {
-            product.title
-        })}
-      </div> */}
+        <div>
+            <MainHead/>
+            <DiffCateg/>
+            <NewProdMen/>
+            <ProdForWoman/>
+        </div>
+
+
     </>
   );
 };

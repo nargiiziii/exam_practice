@@ -2,7 +2,7 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <div>Logo</div>
+    <div><img src="https://preview.colorlib.com/theme/shop/img/logo.png.webp" alt="" /></div>
   )
 }
 

@@ -1,4 +1,40 @@
 .navbar {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.left_side {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.burger {
+    display: none;
+}
+
+
+@media (max-width: 480px){
+    .navbar {
+        padding:  30px 0;
+        /* width: 90%; */
+    }
+    .left_side {
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .drop {
+        position: relative;
+    }
+
 }

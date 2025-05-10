@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import React from "react";
 import Contact from "./pages/Contact";
+import Basket from "./pages/Basket";
+
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/basket",
+        element: <Basket/>,
       },
     ],
   },
