@@ -6,6 +6,7 @@ import About from "./pages/About";
 import React from "react";
 import Contact from "./pages/Contact";
 import Basket from "./pages/Basket";
+import ProdDetail from "./pages/ProdDetail";
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/basket",
         element: <Basket/>,
+      },
+      {
+        path: "/prodDetail/:id",
+        element: <ProdDetail/>,
       },
     ],
   },

@@ -18,9 +18,7 @@ export const productSlice = createSlice({
   name: 'products',
   initialState,
   reducers: {
-    // increment: (state) => {
-    //   state.value += 1
-    // },
+
   },
   extraReducers: (builder) => {
     builder.addCase(getProducts.fulfilled, (state, action) => {
