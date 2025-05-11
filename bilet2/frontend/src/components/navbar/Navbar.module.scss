@@ -1,0 +1,34 @@
+$maincolor: rgb(35, 26, 26);
+
+.navbar {
+    background-color: white;
+    padding: 30px 60px ;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: $maincolor;
+    position: fixed;
+    top: 0;
+    align-items: center;
+}
+
+
+.right_area {
+    display: flex;
+    gap: 10px;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .burger{
+        display: block;
+        position: relative;
+    }
+
+    .right_area{
+        display: none;
+    }
+}
