@@ -7,6 +7,7 @@ import React from "react";
 import Contact from "./pages/Contact";
 import Basket from "./pages/Basket";
 import ProdDetail from "./pages/ProdDetail";
+import Admin from "./pages/Admin";
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/admin",
+        element: <Admin />,
       },
       {
         path: "/basket",

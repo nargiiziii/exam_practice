@@ -1,0 +1,25 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px ;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.sort button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(230, 154, 197);
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+}

@@ -4,7 +4,7 @@ export const addProduct = async(req, res) => {
     try {
         let newProduct = new product(req.body)
         await newProduct.save()
-       return res.status(201).send("created new product", newProduct) 
+       return res.status(201).send(newProduct) 
     } catch (error) {
         return res.status(500).send("server error")
     }

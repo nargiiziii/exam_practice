@@ -6,7 +6,6 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import { combineReducers } from 'redux';
 
-// объединяем редьюсеры
 const rootReducer = combineReducers({
   products: productSlice,
   basket: basketSlice,
