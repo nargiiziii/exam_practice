@@ -1,26 +1,24 @@
-import React from "react";
-import NavList from "../navList/NavList";
+import React, { useState } from "react";
 import Logo from "../logo/Logo";
+import Navlist from "../navlist/Navlist";
 import Wrapper from "../wrapper/Wrapper";
 import style from "./Navbar.module.scss";
-
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from "react";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState();
 
   return (
     <div className={style.navbar}>
       <Logo />
-      <div className={style.right_area}>
-        <NavList />
+      <div className={style.nav_right}>
+        <Navlist />
         <Wrapper />
       </div>
-      <div className={style.burger}>
-        {open && <NavList />}
+      <div className={style.nav_right_res}>
         <GiHamburgerMenu size={25} onClick={() => setOpen(!open)} />
       </div>
+      {open && <Navlist />}
     </div>
   );
 };

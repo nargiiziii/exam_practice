@@ -6,5 +6,5 @@ mongoose
     console.log("connect mongo");
   })
   .catch(() => {
-    console.log("not connected with mongo");
+    console.log("not connect mongo");
   });

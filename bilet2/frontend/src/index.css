@@ -4,15 +4,14 @@
   padding: 0;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1400px;
-}
-
-a {
+a{
   text-decoration: none;
 }
-
-li {
+li{
   list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
 }

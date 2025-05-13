@@ -1,34 +1,30 @@
-$maincolor: rgb(35, 26, 26);
-
 .navbar {
-    background-color: white;
-    padding: 30px 60px ;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    color: $maincolor;
+    padding: 30px 70px;
     position: fixed;
     top: 0;
-    align-items: center;
+    background-color: aliceblue;
 }
 
-
-.right_area {
+.nav_right{
     display: flex;
     gap: 10px;
 }
 
-.burger {
+.nav_right_res{
     display: none;
 }
 
-@media (max-width: 480px) {
-    .burger{
+
+@media (max-width: 576px) {
+    .nav_right {
+        display: none;
+    }
+    .nav_right_res{
         display: block;
         position: relative;
-    }
-
-    .right_area{
-        display: none;
     }
 }

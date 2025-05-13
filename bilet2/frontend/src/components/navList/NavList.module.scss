@@ -2,15 +2,16 @@
     display: flex;
     gap: 10px;
     font-size: 20px;
+
 }
 
-@media (max-width: 480px) {
-    .list {
+@media (max-width: 576px) {
+    .list{
         flex-direction: column;
         position: absolute;
         left: 0;
         top: 80px;
-        background-color: white;
-        padding: 20px 0;
+        background-color: aliceblue;
+        padding: 20px;
     }
 }

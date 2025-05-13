@@ -1,48 +1,55 @@
-import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Layout from "./components/layout/Layout";
-import Home from "./pages/Home";
-import Products from "./pages/Products";
-import Specials from "./pages/Specials";
-import About from "./pages/About";
-import Admin from "./pages/Admin";
+import React from 'react'
+import './App.css'
+import {createBrowserRouter, RouterProvider} from "react-router-dom"
+import Layout from './components/layout/Layout'
+import Home from './pages/Home'
+import Products from './pages/Products'
+import About from './pages/About'
+import Specials from './pages/Specials'
+import Basket from './pages/basket/Basket'
+import Admin from './pages/admin/Admin'
 
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Layout />,
-    children: [
+    path:"/",
+    element: <Layout/>,
+    children:[
       {
-        path: "/",
-        element: <Home />,
+        path:"/",
+        element:<Home/>
       },
       {
-        path: "/products",
-        element: <Products />,
+        path:"/products",
+        element:<Products/>
       },
       {
-        path: "/specials",
-        element: <Specials />,
+        path:"/about",
+        element:<About/>
       },
       {
-        path: "/about",
-        element: <About />,
+        path:"/specials",
+        element:<Specials/>
       },
       {
-        path: "/admin",
-        element: <Admin />,
+        path:"/basket",
+        element:<Basket/>
       },
-    ],
-  },
-]);
+      {
+        path:"/admin",
+        element:<Admin/>
+      },
+    ]
+  }
+])
 
 function App() {
+
   return (
     <>
-      <RouterProvider router={router} />
+    <RouterProvider router={router}/>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

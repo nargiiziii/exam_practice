@@ -1,26 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./OurProd.module.scss";
+import { useDispatch, useSelector } from "react-redux";
+import { getProducts } from "../../redux/features/productSlice";
 import Card from "../card/Card";
 
 const OurProd = () => {
+  const products = useSelector((state) => state.products.allProducts);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getProducts());
+  }, [dispatch]);
+
   return (
-    <div>
-      <div className={style.text}>
+    <div className="container">
+    <div className={style.our_prod}>
+      <div className={style.head_text}>
         <p>POPULAR PRODUCTS</p>
-        <h1>Our Products</h1>
-        <p  className={style.head}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-          hic explicabo animi odit error, veniam aut asperiores. Doloribus,
-          quam! Neque rem ab officia excepturi possimus deserunt sit sed
-          molestiae similique?
+        <h2>Our Products</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          culpa sequi illo fuga fugiat nulla eligendi quisquam cum obcaecati,
         </p>
       </div>
 
-      <div className={style.prod_area}>
-
-        <Card product="product"/>
-
+      <div className={style.products}>
+        {products &&
+          products.map((product) => (
+            <Card key={product._id} product={product} />
+          ))}
       </div>
+    </div>
     </div>
   );
 };
